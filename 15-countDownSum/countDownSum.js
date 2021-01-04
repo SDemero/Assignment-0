@@ -3,7 +3,7 @@ class MySolution {
      if (num == 1) {
       return 1;
     } else {
-      return (num + this.countDownSum(--num));
+      return (num + this.countDownSum(num -1));
     }
   }
 }
