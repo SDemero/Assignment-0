@@ -1,5 +1,12 @@
 function frequencyCounter(word) {
-  // Insert code here;
+  var freq = {};
+word.split('').forEach(letter => {
+    if (freq[letter]) {
+      freq[letter]++;
+    } else {
+      freq[letter] = 1;
+    }});
+return freq;
 }
 
 // Do not edit this line;
